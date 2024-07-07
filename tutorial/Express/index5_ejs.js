@@ -21,6 +21,10 @@ app.get('/profile',(req,res)=>{
     res.render(`${ejsPath}/profile.ejs`,{user});
 })
 
+app.get('/login',(req,res)=>{
+    res.render(`${ejsPath}/login.ejs`);
+})
+
 app.get('/about',(req,res)=>{
     res.sendFile(`${dirPath}/about.html`)
 })
